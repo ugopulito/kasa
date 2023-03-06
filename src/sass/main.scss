@@ -1,0 +1,152 @@
+$red: #FF6060;
+$black: #000000;
+$white: #ffffff;
+$grey: #F6F6F6;
+*{
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: unset;
+}
+
+body{
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            margin-left: 3.5rem;
+            a{
+                font-weight: 500;
+                font-size: 1.5rem;
+                color: $red;
+            }
+        }
+    }
+    .active{
+        text-decoration: underline;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    padding: 2rem 0;
+    img{
+        width: 120px;
+        margin: 2rem 0;
+    }
+}
+
+.error{
+    text-align: center;
+    color: $red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+    .big{
+        font-size: 18rem;
+        font-weight: 700;
+    }
+    .medium{
+        font-size: 2.25rem;
+    }
+    a{
+        font-size: 1.125rem;
+        text-decoration: underline;
+    }
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(0.7);
+    }
+    p{
+        position: absolute;
+        color: $white;
+        font-size: 3rem;
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    padding: 50px;
+    background-color: $grey;
+    border-radius: 25px;
+    margin: 40px 0;
+    .card{
+        position: relative;
+        width: 340px;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gradient{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+        }
+        h3{
+            position: absolute;
+            color: $white;
+            bottom: 0;
+            margin: 20px;
+        }
+    }
+}
+
+.dropdown{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    h3{
+        background-color: $red;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        color: $white;
+        border-radius: 5px;
+    }
+    p{
+        background-color: $grey;
+        color: $red;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.about-dropdowns{
+    width: 80%;
+    margin: 0 auto;
+}
