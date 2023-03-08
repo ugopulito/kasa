@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Card = (props) => {
     return (
-        <Link to={"/logement/"+props.id} state={{index : props.index}}>
+        <Link to={"/logement/"+props.id} >
             <article className='card'>
                 <img src={props.img} alt={props.alt} />
                 <div className='gradient'></div>

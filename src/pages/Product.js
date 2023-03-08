@@ -1,14 +1,14 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown'
 
 import Data from '../data.json'
 //Est-ce qu'il vaut mieux appeler une nouvelle fois les données ou les transmettre via le state ?
 const Product = () => {
-    const currentLocation = useLocation();
-    const logement = Data[currentLocation.state.index];
-    console.log(logement);
+    const logementId = useParams().id;
+    const index = Data.findIndex(item => item.id === logementId);
+    const logement = Data[index];
     return (
         <div className='containerLogement'>
             <Carrousel list={logement.pictures} img={logement.pictures} alt={logement.title}/>
