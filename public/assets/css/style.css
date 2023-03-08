@@ -2,6 +2,7 @@
   margin: 0;
   margin-block: 0;
   margin-inline: 0;
+  padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
@@ -135,16 +136,110 @@ footer img {
   color: #ffffff;
   border-radius: 5px;
 }
-.dropdown p {
+.dropdown p, .dropdown ul {
   background-color: #F6F6F6;
   color: #FF6060;
   padding: 20px;
   border-radius: 0 0 5px 5px;
+  height: 100%;
 }
 
-.about-dropdowns {
+.containerAbout .dropdowns {
   width: 80%;
   margin: 0 auto;
+}
+
+.carrousel {
+  margin: 20px 0 30px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.carrousel .chevron {
+  position: absolute;
+  cursor: pointer;
+}
+.carrousel .chevron.right {
+  right: 2%;
+}
+.carrousel .chevron.left {
+  left: 2%;
+  transform: rotate(180deg);
+}
+.carrousel .picture {
+  width: 100%;
+  aspect-ratio: 1240/415;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.containerLogement .info {
+  display: flex;
+  justify-content: space-between;
+}
+.containerLogement .info .left, .containerLogement .info .right {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.containerLogement h1 {
+  font-size: 2rem;
+  color: #FF6060;
+  font-weight: 500;
+}
+.containerLogement h2 {
+  font-size: 1rem;
+  color: #FF6060;
+  font-weight: 500;
+}
+.containerLogement .tagsList {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 24px;
+}
+.containerLogement .tagsList li {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.containerLogement .host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+}
+.containerLogement .host p {
+  width: min-content;
+  color: #FF6060;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: right;
+}
+.containerLogement .host img {
+  width: 64px;
+  border-radius: 50%;
+}
+.containerLogement .rating {
+  display: flex;
+  justify-content: flex-end;
+}
+.containerLogement .dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+.containerLogement .dropdowns .dropdown {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+.containerLogement .dropdowns .dropdown p, .containerLogement .dropdowns .dropdown ul, .containerLogement .dropdowns .dropdown h3 {
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

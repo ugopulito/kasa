@@ -7,7 +7,7 @@ const Dropdown = (props) => {
     return (
         <div className='dropdown'>
             <h3 onClick={log}>{props.title}</h3>
-            <p>{props.text}</p>
+            <>{props.text}</>
         </div>
     );
 };

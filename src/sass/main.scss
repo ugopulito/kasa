@@ -6,6 +6,7 @@ $grey: #F6F6F6;
     margin: 0;
     margin-block: 0;
     margin-inline: 0;
+    padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -138,15 +139,111 @@ footer{
         color: $white;
         border-radius: 5px;
     }
-    p{
+    p, ul{
         background-color: $grey;
         color: $red;
         padding: 20px;
         border-radius: 0 0 5px 5px;
+        height: 100%;
     }
 }
 
-.about-dropdowns{
-    width: 80%;
-    margin: 0 auto;
+.containerAbout{
+    .dropdowns{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.carrousel{
+    margin: 20px 0 30px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .chevron{
+        position: absolute;
+        cursor: pointer;
+        &.right{
+            right: 2%;
+        }
+        &.left{
+            left: 2%;
+            transform: rotate(180deg);
+        }
+    }
+    .picture {
+        width: 100%;
+        aspect-ratio: 1240/415;
+        object-fit: cover;
+        border-radius: 25px;
+    }    
+} 
+.containerLogement{
+    .info{
+        display: flex;
+        justify-content: space-between;
+        .left, .right{
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+    h1{
+        font-size: 2rem;
+        color: $red;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 1rem;
+        color: $red;
+        font-weight: 500;
+    }
+    .tagsList{
+        display: flex;
+        column-gap: 10px;
+        margin-top: 24px;
+        li{
+            display: flex;
+            align-items: center;
+            height: 25px;
+            padding: 0 20px;
+            border-radius: 10px;
+            background-color: $red;
+            color: $white;
+            font-size: .9rem;
+        }
+    }
+    .host{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 10px;
+        p{
+            width: min-content;
+            color: $red;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: right;
+        }
+        img{
+            width: 64px;
+            border-radius: 50%;
+        }
+    }
+    .rating{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .dropdowns{
+        display: flex;
+        justify-content: space-between;
+        .dropdown{
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+            p, ul, h3{
+                font-size: 1.1rem;
+            }
+        }
+    }
 }
