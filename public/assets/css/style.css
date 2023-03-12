@@ -130,11 +130,27 @@ footer img {
   margin: 2rem 0;
 }
 .dropdown h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #FF6060;
   padding: 0.5rem 1rem;
   font-weight: 500;
   color: #ffffff;
   border-radius: 5px;
+  z-index: 2;
+  cursor: pointer;
+}
+.dropdown .chevron {
+  width: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown .chevron.up {
+  transform: rotate(-90deg);
+}
+.dropdown .chevron.down {
+  transform: rotate(90deg);
 }
 .dropdown p, .dropdown ul {
   background-color: #F6F6F6;
@@ -142,6 +158,12 @@ footer img {
   padding: 20px;
   border-radius: 0 0 5px 5px;
   height: 100%;
+  overflow: hidden;
+  transform: translateY(-3px);
+}
+.dropdown .closed {
+  height: 0%;
+  padding: 0;
 }
 
 .containerAbout .dropdowns {
@@ -165,6 +187,9 @@ footer img {
 .carrousel .chevron.left {
   left: 2%;
   transform: rotate(180deg);
+}
+.carrousel .chevron:active {
+  width: 45px;
 }
 .carrousel .picture {
   width: 100%;

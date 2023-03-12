@@ -133,11 +133,27 @@ footer{
     font-size: 1.5rem;
     margin: 2rem 0;
     h3{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background-color: $red;
         padding: 0.5rem 1rem;
         font-weight: 500;
         color: $white;
         border-radius: 5px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .chevron{
+        width: 1rem;
+        transition: all .2s ease-in-out;
+        &.up{
+            transform: rotate(-90deg);
+        }
+        &.down{
+            transform: rotate(90deg);
+        }
     }
     p, ul{
         background-color: $grey;
@@ -145,6 +161,12 @@ footer{
         padding: 20px;
         border-radius: 0 0 5px 5px;
         height: 100%;
+        overflow: hidden;
+        transform: translateY(-3px);
+    }
+    .closed{
+        height: 0%;
+        padding: 0;
     }
 }
 
@@ -168,6 +190,9 @@ footer{
         &.left{
             left: 2%;
             transform: rotate(180deg);
+        }
+        &:active{
+            width: 45px;
         }
     }
     .picture {
