@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import Data from '../data.json';
 
 const Home = () => {
+    window.scrollTo(0,0);
     return (
         <div>
             <Banner img="/assets/img/falaises.jpg" alt="photo de falaises" text="Chez vous, partout et ailleurs"/>

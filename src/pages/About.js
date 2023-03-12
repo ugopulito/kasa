@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import Dropdown from '../components/Dropdown';
 
 const About = () => {
+    window.scrollTo(0,0);
     return (
         <div className='containerAbout'>
             <Banner img="/assets/img/montagnes.jpg" alt="photo de montagnes" />

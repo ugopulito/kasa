@@ -4,8 +4,9 @@ import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown'
 
 import Data from '../data.json'
-//Est-ce qu'il vaut mieux appeler une nouvelle fois les données ou les transmettre via le state ?
+
 const Product = () => {
+    window.scrollTo(0,0);
     const logementId = useParams().id;
     const index = Data.findIndex(item => item.id === logementId);
     const logement = Data[index];
