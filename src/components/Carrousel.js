@@ -1,40 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const Carrousel = (props) => {
-    console.log((props.list));
-    let i = 0;
+    let [currentImage, setCurrentImage] = useState(0);
     const changeIndexRight = () => {
-        if(i < (props.list).length-1){
-            i++
+        if(currentImage < (props.list).length-1){
+            setCurrentImage(currentImage + 1);
         }
         else{
-            i = 0
+            setCurrentImage(0);
         }
-        console.log(i);
     };
     const changeIndexLeft = () => {
-        if(i > 0){
-            i--
+        if(currentImage > 0){
+            setCurrentImage(currentImage -1);
         }
         else{
-            i = (props.list).length-1
+            setCurrentImage((props.list).length-1);
         }
-        console.log(i);
     };
     if ((props.list).length > 1){
         return (
             <div className='carrousel'>
                 <img onClick={changeIndexRight} className='chevron right' src='/assets/img/chevron.png' alt='chevron vers la droite'/>
                 <img onClick={changeIndexLeft} className='chevron left' src='/assets/img/chevron.png' alt='chevron vers la gauche'/>
-                <img className='picture' src={props.img[i]} alt={props.alt} />
+                <img className='picture' src={props.img[currentImage]} alt={props.alt} />
             </div>
         );
     }
     else{
         return (
             <div className='carrousel'>
-                <img className='picture' src={props.img[i]} alt={props.alt} />
+                <img className='picture' src={props.img[currentImage]} alt={props.alt} />
             </div>
         );
     }
