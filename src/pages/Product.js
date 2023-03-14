@@ -2,14 +2,15 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown'
+import Rating from '../components/Rating';
 
 import Data from '../data.json'
 
 const Product = () => {
     window.scrollTo(0,0);
     const logementId = useParams().id;
-    const index = Data.findIndex(item => item.id === logementId);
-    const logement = Data[index];
+    const logIndex = Data.findIndex(item => item.id === logementId);
+    const logement = Data[logIndex];
     return (
         <div className='containerLogement'>
             <Carrousel list={logement.pictures} img={logement.pictures} alt={logement.title}/>
@@ -28,8 +29,8 @@ const Product = () => {
                         <p>{logement.host.name}</p>
                         <img src={logement.host.picture} alt={logement.host.name} />
                     </div>
-                    <div className='rating'>
-                        {logement.rating}
+                    <div className='stars'>
+                        <Rating nbStars={parseInt(logement.rating)} totalStars={5}/>
                     </div>
                 </div>
             </div>

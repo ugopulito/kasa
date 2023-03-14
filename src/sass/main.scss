@@ -2,6 +2,8 @@ $red: #FF6060;
 $black: #000000;
 $white: #ffffff;
 $grey: #F6F6F6;
+$dark-grey:#E3E3E3;
+
 *{
     margin: 0;
     margin-block: 0;
@@ -202,6 +204,7 @@ footer{
         border-radius: 25px;
     }    
 } 
+
 .containerLogement{
     .info{
         display: flex;
@@ -269,6 +272,19 @@ footer{
             p, ul, h3{
                 font-size: 1.1rem;
             }
+        }
+    }
+}
+
+.stars{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    span{
+        font-size: 30px;
+        color: $dark-grey;
+        &.full{
+            color: $red;
         }
     }
 }
