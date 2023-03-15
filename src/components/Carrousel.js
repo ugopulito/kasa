@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 
 const Carrousel = (props) => {
     let [currentImage, setCurrentImage] = useState(0);
+    let currentIndex = currentImage + 1;
     const changeIndexRight = () => {
-        if(currentImage < (props.list).length-1){
+        if(currentImage < (props.list).length - 1){
             setCurrentImage(currentImage + 1);
         }
         else{
@@ -13,10 +14,10 @@ const Carrousel = (props) => {
     };
     const changeIndexLeft = () => {
         if(currentImage > 0){
-            setCurrentImage(currentImage -1);
+            setCurrentImage(currentImage - 1);
         }
         else{
-            setCurrentImage((props.list).length-1);
+            setCurrentImage((props.list).length - 1);
         }
     };
     if ((props.list).length > 1){
@@ -24,6 +25,7 @@ const Carrousel = (props) => {
             <div className='carrousel'>
                 <img onClick={changeIndexRight} className='chevron right' src='/assets/img/chevron.png' alt='chevron vers la droite'/>
                 <img onClick={changeIndexLeft} className='chevron left' src='/assets/img/chevron.png' alt='chevron vers la gauche'/>
+                <p className='index'>{currentIndex} / {props.list.length}</p>
                 <img className='picture' src={props.img[currentImage]} alt={props.alt} />
             </div>
         );

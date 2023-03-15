@@ -44,6 +44,9 @@ header{
 }
 
 footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,6 +200,13 @@ footer{
             width: 45px;
         }
     }
+    .index{
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        color: $white;
+        font-size: 18px;
+    }
     .picture {
         width: 100%;
         aspect-ratio: 1240/415;
@@ -281,7 +291,6 @@ footer{
 
 .stars{
     display: flex;
-    flex-direction: row-reverse;
     justify-content: flex-start;
     span{
         font-size: 30px;
@@ -372,6 +381,9 @@ footer{
                     width: 10px;
                 }
             }
+            .index{
+                display: none;
+            }
         }
         .info{
             flex-direction: column;
@@ -399,7 +411,6 @@ footer{
                 margin: 20px 0;
                 .stars {
                     justify-content: space-between;
-                    flex-direction: row;
                     width: 25%;
                     span{
                     font-size: 15px;

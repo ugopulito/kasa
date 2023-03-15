@@ -38,6 +38,9 @@ header .active {
 }
 
 footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,6 +194,13 @@ footer img {
 .carrousel .chevron:active {
   width: 45px;
 }
+.carrousel .index {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 18px;
+}
 .carrousel .picture {
   width: 100%;
   aspect-ratio: 1240/415;
@@ -272,7 +282,6 @@ footer img {
 
 .stars {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: flex-start;
 }
 .stars span {
@@ -355,6 +364,9 @@ footer img {
   .containerLogement .carrousel .chevron:active {
     width: 10px;
   }
+  .containerLogement .carrousel .index {
+    display: none;
+  }
   .containerLogement .info {
     flex-direction: column;
   }
@@ -383,7 +395,6 @@ footer img {
   }
   .containerLogement .info .right .stars {
     justify-content: space-between;
-    flex-direction: row;
     width: 25%;
   }
   .containerLogement .info .right .stars span {
