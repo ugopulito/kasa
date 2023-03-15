@@ -5,10 +5,16 @@ import Dropdown from '../components/Dropdown'
 import Rating from '../components/Rating';
 
 import Data from '../data.json'
+import Error from './Error';
 
 const Product = () => {
     const logementId = useParams().id;
     const logIndex = Data.findIndex(item => item.id === logementId);
+    if (logIndex === -1){
+        return(
+            <Error/>
+        )
+    }
     const logement = Data[logIndex];
     return (
         <div className='containerLogement'>

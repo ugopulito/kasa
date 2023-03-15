@@ -16,8 +16,8 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path='logement/:id' element={<Product/>}/>
             <Route path='about' element={<About/>}/>
-          </Route>
             <Route path='*' element={<Error/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
