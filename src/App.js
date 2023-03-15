@@ -4,11 +4,13 @@ import Product from './pages/Product';
 import About from './pages/About';
 import Error from './pages/Error';
 import Layout from './pages/Layout';
+import ScrollReset from './components/ScrollReset';
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
+      <ScrollReset/>
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>

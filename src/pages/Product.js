@@ -7,7 +7,6 @@ import Rating from '../components/Rating';
 import Data from '../data.json'
 
 const Product = () => {
-    window.scrollTo(0,0);
     const logementId = useParams().id;
     const logIndex = Data.findIndex(item => item.id === logementId);
     const logement = Data[logIndex];
