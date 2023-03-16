@@ -1,0 +1,16 @@
+//Desktop
+footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    padding: 2rem 0;
+    img{
+        width: 120px;
+        margin: 2rem 0;
+    }
+}

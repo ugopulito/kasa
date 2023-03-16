@@ -4,7 +4,7 @@ import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown'
 import Rating from '../components/Rating';
 
-import Data from '../data.json'
+import Data from '../data/data.json'
 import Error from './Error';
 
 const Product = () => {

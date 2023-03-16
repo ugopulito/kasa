@@ -1,0 +1,24 @@
+//Desktop
+*{
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: unset;
+}
+body{
+    max-width: 1240px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+//Responsive
+@media (max-width: 470px){
+    body{
+        max-width: 90%;
+    }
+}

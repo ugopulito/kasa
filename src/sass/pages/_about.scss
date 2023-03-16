@@ -1,0 +1,27 @@
+//Desktop
+.containerAbout{
+    .dropdowns{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+//Responsive
+@media (max-width: 470px){
+    .containerAbout{
+        .banner{
+            img{
+                height: 220px;
+            }
+        }
+        .dropdowns{
+            width: 100%;
+            h3, p{
+                font-size: .9rem;
+            }
+            .chevron{
+                width: .5rem;
+            }
+        }
+    }
+}

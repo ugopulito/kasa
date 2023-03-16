@@ -15,6 +15,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 470px) {
+  body {
+    max-width: 90%;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -37,6 +42,33 @@ header .active {
   text-decoration: underline;
 }
 
+@media (max-width: 470px) {
+  header {
+    margin: 20px 0;
+  }
+  header .logo {
+    width: 50%;
+  }
+  header .logo img {
+    max-width: 145px;
+  }
+  header nav {
+    width: 50%;
+  }
+  header ul {
+    flex-wrap: wrap;
+  }
+  header ul li {
+    margin: 0;
+    text-align: right;
+    flex: 1;
+  }
+  header ul li a {
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+}
 footer {
   position: absolute;
   width: 100%;
@@ -73,6 +105,14 @@ footer img {
   text-decoration: underline;
 }
 
+@media (max-width: 470px) {
+  .error .big {
+    font-size: 6rem;
+  }
+  .error .medium {
+    font-size: 1rem;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -92,6 +132,17 @@ footer img {
   font-size: 3rem;
 }
 
+@media (max-width: 470px) {
+  .banner img {
+    height: 110px;
+    border-radius: 10px;
+  }
+  .banner p {
+    width: 90%;
+    font-size: 1.5rem;
+    padding-right: 4rem;
+  }
+}
 .cards {
   display: flex;
   justify-content: space-between;
@@ -102,32 +153,70 @@ footer img {
   border-radius: 25px;
   margin: 40px 0;
 }
-.cards .card {
+
+.card {
   position: relative;
   width: 340px;
   aspect-ratio: 1/1;
   border-radius: 10px;
   overflow: hidden;
 }
-.cards .card img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.cards .card .gradient {
+.card .gradient {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
-.cards .card h3 {
+.card h3 {
   position: absolute;
   color: #ffffff;
   bottom: 0;
   margin: 20px;
 }
 
+@media (max-width: 470px) {
+  .cards {
+    background-color: unset;
+    padding: 0;
+    row-gap: 20px;
+    margin: 20px 0;
+  }
+  .card {
+    width: 100%;
+  }
+}
+.rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-start;
+}
+.stars span {
+  font-size: 30px;
+  color: #E3E3E3;
+}
+.stars span.full {
+  color: #FF6060;
+}
+
+@media (max-width: 470px) {
+  .stars {
+    justify-content: space-between;
+    width: 25%;
+  }
+  .stars span {
+    font-size: 15px;
+  }
+}
 .dropdown {
   font-size: 1.5rem;
   margin: 2rem 0;
@@ -169,11 +258,6 @@ footer img {
   padding: 0;
 }
 
-.containerAbout .dropdowns {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .carrousel {
   margin: 20px 0 30px 0;
   display: flex;
@@ -208,6 +292,43 @@ footer img {
   border-radius: 25px;
 }
 
+@media (max-width: 470px) {
+  .carrousel {
+    margin: 25px 0 16px 0;
+  }
+  .carrousel .picture {
+    aspect-ratio: 335/255;
+    border-radius: 10px;
+  }
+  .carrousel .chevron {
+    height: 20px;
+  }
+  .carrousel .chevron:active {
+    width: 10px;
+  }
+  .carrousel .index {
+    display: none;
+  }
+}
+.containerAbout .dropdowns {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 470px) {
+  .containerAbout .banner img {
+    height: 220px;
+  }
+  .containerAbout .dropdowns {
+    width: 100%;
+  }
+  .containerAbout .dropdowns h3, .containerAbout .dropdowns p {
+    font-size: 0.9rem;
+  }
+  .containerAbout .dropdowns .chevron {
+    width: 0.5rem;
+  }
+}
 .containerLogement .info {
   display: flex;
   justify-content: space-between;
@@ -263,10 +384,6 @@ footer img {
   width: 64px;
   border-radius: 50%;
 }
-.containerLogement .rating {
-  display: flex;
-  justify-content: flex-end;
-}
 .containerLogement .dropdowns {
   display: flex;
   justify-content: space-between;
@@ -280,93 +397,7 @@ footer img {
   font-size: 1.1rem;
 }
 
-.stars {
-  display: flex;
-  justify-content: flex-start;
-}
-.stars span {
-  font-size: 30px;
-  color: #E3E3E3;
-}
-.stars span.full {
-  color: #FF6060;
-}
-
 @media (max-width: 470px) {
-  body {
-    max-width: 90%;
-  }
-  header {
-    margin: 20px 0;
-  }
-  header .logo {
-    width: 50%;
-  }
-  header .logo img {
-    max-width: 145px;
-  }
-  header nav {
-    width: 50%;
-  }
-  header ul {
-    flex-wrap: wrap;
-  }
-  header ul li {
-    margin: 0;
-    text-align: right;
-    flex: 1;
-  }
-  header ul li a {
-    text-transform: uppercase;
-    white-space: nowrap;
-    font-size: 12px;
-  }
-  .banner img {
-    height: 110px;
-    border-radius: 10px;
-  }
-  .banner p {
-    width: 90%;
-    font-size: 1.5rem;
-    padding-right: 4rem;
-  }
-  .cards {
-    background-color: unset;
-    padding: 0;
-    row-gap: 20px;
-    margin: 20px 0;
-  }
-  .cards .card {
-    width: 100%;
-  }
-  .containerAbout .banner img {
-    height: 220px;
-  }
-  .containerAbout .dropdowns {
-    width: 100%;
-  }
-  .containerAbout .dropdowns h3, .containerAbout .dropdowns p {
-    font-size: 0.9rem;
-  }
-  .containerAbout .dropdowns .chevron {
-    width: 0.5rem;
-  }
-  .containerLogement .carrousel {
-    margin: 25px 0 16px 0;
-  }
-  .containerLogement .carrousel .picture {
-    aspect-ratio: 335/255;
-    border-radius: 10px;
-  }
-  .containerLogement .carrousel .chevron {
-    height: 20px;
-  }
-  .containerLogement .carrousel .chevron:active {
-    width: 10px;
-  }
-  .containerLogement .carrousel .index {
-    display: none;
-  }
   .containerLogement .info {
     flex-direction: column;
   }
@@ -393,13 +424,6 @@ footer img {
     flex-direction: row-reverse;
     margin: 20px 0;
   }
-  .containerLogement .info .right .stars {
-    justify-content: space-between;
-    width: 25%;
-  }
-  .containerLogement .info .right .stars span {
-    font-size: 15px;
-  }
   .containerLogement .info .host p {
     font-size: 12px;
   }
@@ -418,12 +442,6 @@ footer img {
   }
   .containerLogement .dropdowns .dropdown .chevron {
     width: 0.5rem;
-  }
-  .error .big {
-    font-size: 6rem;
-  }
-  .error .medium {
-    font-size: 1rem;
   }
 }
 

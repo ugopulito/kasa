@@ -1,0 +1,51 @@
+//Desktop
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            margin-left: 3.5rem;
+            a{
+                font-weight: 500;
+                font-size: 1.5rem;
+                color: $red;
+            }
+        }
+    }
+    .active{
+        text-decoration: underline;
+    }
+}
+
+//Responsive
+@media (max-width: 470px){
+    header{
+        margin: 20px 0;
+        .logo {
+            width: 50%;
+            img{
+            max-width: 145px;
+            }
+        }
+        nav{
+            width: 50%;
+        }
+        ul{
+            flex-wrap: wrap;
+            li{
+            margin: 0;
+            text-align: right;
+            flex: 1;
+                a{
+                text-transform: uppercase;
+                white-space: nowrap;
+                font-size: 12px;
+                }
+            }
+        }
+    }
+}

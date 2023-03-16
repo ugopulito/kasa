@@ -1,0 +1,27 @@
+//Desktop
+.rating{
+    display: flex;
+    justify-content: flex-end;
+}
+.stars{
+    display: flex;
+    justify-content: flex-start;
+    span{
+        font-size: 30px;
+        color: $dark-grey;
+        &.full{
+            color: $red;
+        }
+    }
+}
+
+//Responsive
+@media (max-width: 470px){
+    .stars {
+        justify-content: space-between;
+        width: 25%;
+        span{
+        font-size: 15px;
+        }
+    }
+}

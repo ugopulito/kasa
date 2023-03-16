@@ -1,0 +1,33 @@
+//Desktop
+.error{
+    text-align: center;
+    color: $red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+    .big{
+        font-size: 18rem;
+        font-weight: 700;
+    }
+    .medium{
+        font-size: 2.25rem;
+    }
+    a{
+        font-size: 1.125rem;
+        text-decoration: underline;
+    }
+}
+
+
+//Responsive
+@media (max-width: 470px){
+        .error{
+        .big{
+            font-size: 6rem;
+        }
+        .medium{
+            font-size: 1rem;
+        }
+    }
+}
