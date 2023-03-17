@@ -23,7 +23,7 @@
         bottom: 6%;
         left: 50%;
         color: $white;
-        font-size: 18px;
+        font-size: 1.1rem;
     }
     .picture {
         width: 100%;
@@ -36,7 +36,7 @@
 //Responsive
 @media (max-width: 470px){
     .carrousel {
-        margin: 25px 0 16px 0;
+        margin: 25px 0 15px 0;
         .picture{
         aspect-ratio: 335/255;
         border-radius: 10px;

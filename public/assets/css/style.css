@@ -66,7 +66,7 @@ header .active {
   header ul li a {
     text-transform: uppercase;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 footer {
@@ -98,10 +98,10 @@ footer img {
   font-weight: 700;
 }
 .error .medium {
-  font-size: 2.25rem;
+  font-size: 2.3rem;
 }
 .error a {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   text-decoration: underline;
 }
 
@@ -201,7 +201,7 @@ footer img {
   justify-content: flex-start;
 }
 .stars span {
-  font-size: 30px;
+  font-size: 2rem;
   color: #E3E3E3;
 }
 .stars span.full {
@@ -214,7 +214,7 @@ footer img {
     width: 25%;
   }
   .stars span {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
 .dropdown {
@@ -283,7 +283,7 @@ footer img {
   bottom: 6%;
   left: 50%;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 .carrousel .picture {
   width: 100%;
@@ -294,7 +294,7 @@ footer img {
 
 @media (max-width: 470px) {
   .carrousel {
-    margin: 25px 0 16px 0;
+    margin: 25px 0 15px 0;
   }
   .carrousel .picture {
     aspect-ratio: 335/255;
@@ -352,7 +352,7 @@ footer img {
 .containerLogement .tagsList {
   display: flex;
   column-gap: 10px;
-  margin-top: 24px;
+  margin-top: 25px;
   width: 100%;
   flex-wrap: wrap;
   row-gap: 10px;
@@ -389,7 +389,7 @@ footer img {
   justify-content: space-between;
 }
 .containerLogement .dropdowns .dropdown {
-  width: 47%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -405,17 +405,17 @@ footer img {
     margin-top: 10px;
   }
   .containerLogement .info .tagsList li {
-    font-size: 10px;
+    font-size: 0.6rem;
     border-radius: 5px;
   }
   .containerLogement .info .left {
     width: 100%;
   }
   .containerLogement .info .left h1 {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   .containerLogement .info .left h2 {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .containerLogement .info .right {
     width: 100%;
@@ -425,10 +425,10 @@ footer img {
     margin: 20px 0;
   }
   .containerLogement .info .host p {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
   .containerLogement .info .host img {
-    width: 32px;
+    width: 30px;
   }
   .containerLogement .dropdowns {
     flex-direction: column;
@@ -441,7 +441,7 @@ footer img {
     font-size: 0.9rem;
   }
   .containerLogement .dropdowns .dropdown .chevron {
-    width: 0.5rem;
+    width: 8px;
   }
 }
 
