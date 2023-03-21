@@ -10,19 +10,21 @@
     color: unset;
 }
 body{
-    max-width: 1240px;
+    max-width: 1440px;
+    padding: 0 50px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
 
 
 //Responsive
-@media ($tablet){
+@media (min-width:$tablet-min) and (max-width:$tablet-max){
 
 }
 
 @media (max-width: $mobile){
     body{
         max-width: 90%;
+        padding: 0;
     }
 }
