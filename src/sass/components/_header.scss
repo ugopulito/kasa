@@ -22,7 +22,7 @@ header{
 }
 
 //Responsive
-@media (max-width: 470px){
+@media (max-width: $mobile){
     header{
         margin: 20px 0;
         .logo {

@@ -17,7 +17,11 @@ body{
 
 
 //Responsive
-@media (max-width: 470px){
+@media ($tablet){
+
+}
+
+@media (max-width: $mobile){
     body{
         max-width: 90%;
     }

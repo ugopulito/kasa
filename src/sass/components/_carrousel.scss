@@ -34,7 +34,7 @@
 } 
 
 //Responsive
-@media (max-width: 470px){
+@media (max-width: $mobile){
     .carrousel {
         margin: 25px 0 15px 0;
         .picture{

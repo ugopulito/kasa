@@ -16,7 +16,7 @@
 }
 
 //Responsive
-@media (max-width: 470px){
+@media (max-width: $mobile){
     .stars {
         justify-content: space-between;
         width: 25%;

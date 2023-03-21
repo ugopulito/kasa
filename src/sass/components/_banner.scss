@@ -19,7 +19,7 @@
 }
 
 //Responsive
-@media (max-width: 470px){
+@media (max-width: $mobile){
         .banner{
         img{
             height: 110px;

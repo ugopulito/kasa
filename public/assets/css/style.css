@@ -15,7 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   body {
     max-width: 90%;
   }
@@ -42,7 +42,7 @@ header .active {
   text-decoration: underline;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   header {
     margin: 20px 0;
   }
@@ -105,7 +105,7 @@ footer img {
   text-decoration: underline;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .error .big {
     font-size: 6rem;
   }
@@ -132,7 +132,7 @@ footer img {
   font-size: 3rem;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .banner img {
     height: 110px;
     border-radius: 10px;
@@ -180,7 +180,7 @@ footer img {
   margin: 20px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .cards {
     background-color: unset;
     padding: 0;
@@ -208,7 +208,7 @@ footer img {
   color: #FF6060;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .stars {
     justify-content: space-between;
     width: 25%;
@@ -292,7 +292,7 @@ footer img {
   border-radius: 25px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .carrousel {
     margin: 25px 0 15px 0;
   }
@@ -315,7 +315,7 @@ footer img {
   margin: 0 auto;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .containerAbout .banner img {
     height: 220px;
   }
@@ -397,7 +397,7 @@ footer img {
   font-size: 1.1rem;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .containerLogement .info {
     flex-direction: column;
   }

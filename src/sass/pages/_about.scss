@@ -7,7 +7,7 @@
 }
 
 //Responsive
-@media (max-width: 470px){
+@media (max-width: $mobile){
     .containerAbout{
         .banner{
             img{

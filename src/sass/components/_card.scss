@@ -36,7 +36,7 @@
 }
 
 //Responsive
-@media (max-width: 470px){
+@media (max-width: $mobile){
     .cards{
         background-color: unset;
         padding: 0;
