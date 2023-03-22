@@ -27,6 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
+  transition: all 0.5s ease-in-out;
 }
 header ul {
   display: flex;
@@ -42,11 +43,6 @@ header .active {
   text-decoration: underline;
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
-  header ul {
-    column-gap: 30px;
-  }
-}
 @media (max-width: 768px) {
   header {
     margin: 20px 0;
@@ -95,11 +91,12 @@ footer img {
   color: #FF6060;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 60vh;
 }
 .error .big {
   font-size: 18rem;
+  line-height: 13rem;
   font-weight: 700;
 }
 .error .medium {
@@ -111,11 +108,17 @@ footer img {
 }
 
 @media (max-width: 768px) {
+  .error {
+    justify-content: center;
+  }
   .error .big {
     font-size: 6rem;
   }
   .error .medium {
     font-size: 1rem;
+  }
+  .error a {
+    margin-top: 130px;
   }
 }
 .banner {
@@ -156,7 +159,7 @@ footer img {
   }
   .banner p {
     font-size: 1.5rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
 }
 .cards {
@@ -242,7 +245,7 @@ footer img {
 @media (max-width: 768px) {
   .stars {
     justify-content: space-between;
-    width: 25%;
+    column-gap: 5px;
   }
   .stars span {
     font-size: 1rem;
@@ -346,12 +349,13 @@ footer img {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .containerAbout .banner img {
     height: 220px;
   }
   .containerAbout .dropdowns {
     width: 100%;
+    max-width: 739px;
   }
   .containerAbout .dropdowns h3, .containerAbout .dropdowns p {
     font-size: 0.9rem;
@@ -456,7 +460,7 @@ footer img {
     margin: 20px 0;
   }
   .containerLogement .info .host p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .containerLogement .info .host img {
     width: 30px;

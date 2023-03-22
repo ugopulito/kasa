@@ -4,10 +4,11 @@
     color: $red;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 60vh;
     .big{
         font-size: 18rem;
+        line-height: 13rem;
         font-weight: 700;
     }
     .medium{
@@ -23,11 +24,15 @@
 //Responsive
 @media (max-width: $mobile){
         .error{
+            justify-content: center;
         .big{
             font-size: 6rem;
         }
         .medium{
             font-size: 1rem;
+        }
+        a{
+            margin-top: 130px;
         }
     }
 }

@@ -19,7 +19,7 @@
 @media (max-width: $mobile){
     .stars {
         justify-content: space-between;
-        width: 25%;
+        column-gap: 5px;
         span{
         font-size: 1rem;
         }
